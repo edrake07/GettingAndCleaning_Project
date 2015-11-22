@@ -55,5 +55,5 @@ summary_data <- data_grouped %>% select(-dataset)
 summary_means <- summary_data %>% summarize_each(funs(mean))
 
 ### writes out csv files to working directory ###
-write.csv(data_all, file = "data_all.csv", row.names = FALSE)
-write.csv(summary_means, file = "summary_means.csv", row.names = FALSE)
+write.csv(data_all, file = "data_all.txt", row.names = FALSE)
+write.csv(summary_means, file = "summary_means.txt", row.names = FALSE)

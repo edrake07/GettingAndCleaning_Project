@@ -8,7 +8,7 @@ output:
 ---
 
 ## Project Description
-This project will take a subset of the UCI HAR data, combine the test and train datasets, run a summary of the data by subject and activity and produce two csv files as output.
+This project will take a subset of the UCI HAR data, combine the test and train datasets, run a summary of the data by subject and activity and produce two txt files as output.
 
 ##Study design and data processing
 
@@ -27,7 +27,7 @@ Data was unzipped creating the 'UCI HAR Dataset' directory
 4. run command 'source("run_analysis.R)'
 
 ###Cleaning of the data
-The 'run_analysis.R' code will gather data from the UCI HAR dataset and produce two csv files. 
+The 'run_analysis.R' code will gather data from the UCI HAR dataset and produce two txt files. 
 Two datasets, test and train, are gathered into one table named 'data_all'. 
 The 'data_all' table only contains variables relating to std dev and mean from the UCI HAR dataset. 
 A summary is taken by subject and activity and written out into summary_means by taking the mean of each variable.
@@ -38,7 +38,15 @@ General description of the files:
  - Data_all is a 10,299 by 89 data frame
  - Summary_means is a 180 by 88 data frame
  - Data contains various standard deviations and means from the Human Activity Research dataset. This dataset was created by measuring 30 participants perform 6 tasks while wearing a smartphone to collect gyroscopic data.
+ The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
  - A full description of the dataset is in the file 'UCI HAR Dataset/README.txt'
+ 
+ ###There are 4 elements to each variable name
+ 1. "t" or "f" prefix which denotes whether or not variable is time series or frequency domain
+ 2. "Body" or "Gravity" to denote the source of the accelaration signal
+ 3. "Acc" or "Gyro" to denote the source of the signal from either an acceleramete or gyroscope
+ 4. "Jerk" or "Mag"
+ 
  - Variables present in the dataset
 
 "dataset"
