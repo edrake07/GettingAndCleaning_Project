@@ -1,4 +1,4 @@
-# TidyProj.R code will gather data from the UCI HAR dataset and produce two csv files
+# run_analysis code will gather data from the UCI HAR dataset and produce two csv files
 # Two datasets, test and train, are gathered into one table named 'data_all'
 # 'data_all only contains variables relating to std dev and mean from the UCI HAR dataset
 # 'data_all' should contain 10,299 rows, 3 columns of categorical data, and 86 columns of variables
